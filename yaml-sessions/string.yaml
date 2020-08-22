@@ -1,0 +1,39 @@
+---
+foo: this is a normal string
+
+
+---
+foo: "this is not a normal string\n"
+bar: this is not a normal string\n
+
+
+#output
+# foo: this is not a normal string
+# bar : this is not a normal string\n
+
+---
+bar: >
+  this is not a normal string it
+  spans more than
+  one line
+  see?
+
+#output
+# bar : this is not a normal string it spans more than one line see?
+
+
+---
+bar: |
+  this is not a normal string it
+  spans more than
+  one line
+  see?
+
+#output
+
+# bar : this is not a normal string it
+# spans more than
+# one line
+# see?
+
+

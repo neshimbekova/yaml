@@ -1,0 +1,11 @@
+# inline dictionaries
+---
+foo: { thing1: huey, thing2: louie, thing3: dewey }
+
+# nested dictionaries
+---
+foo:
+  bar:
+    - bar
+    - rab
+    - plop

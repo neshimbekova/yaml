@@ -1,0 +1,31 @@
+# You can specify arrays or lists on a single line.
+
+---
+items: [ 1, 2, 3, 4, 5 ]
+names: [ "one", "two", "three", "four" ]
+
+# Or, you can put them on multiple lines.
+
+---
+items:
+  - 1 
+  - 2 
+  - 3
+  - 4 
+  - 5 
+names:
+  - "one"
+  - "two"
+  - "three"
+  - "four"
+
+  # The multiple line format is useful for lists that contain complex objects instead of scalars.
+
+---
+items:
+  - things:
+      thing1: huey
+      things2: dewey
+      thing3: louie
+  - other things:
+      key: value
